@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <dbconn></dbconn>
+  <DataSource>D:\c#\db_firebird\bot.fdb</DataSource>
+  <Port>3050</Port>
+  <Database>bot</Database>
+  <FBUser>sysdba</FBUser>
+  <FBPass>masterkey</FBPass>
+  <Charset>UTF8</Charset>
+</Root>
