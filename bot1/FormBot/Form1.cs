@@ -1068,7 +1068,7 @@ namespace FormBot
         {
             CurrencyPair cp = CurrencyPair.Parse("BTC_ETH");//(BaseCur.Text + "_" + QuoteCur.Text);
 
-            textBox6.Text = 
+          //  textBox6.Text = 
 
             double sum = 0.0003914;
             scaling(cp, perSca.SelectedIndex, sum,0.001m);
