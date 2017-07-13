@@ -95,6 +95,10 @@
             this.button5 = new System.Windows.Forms.Button();
             this.graphsper2 = new System.Windows.Forms.ComboBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.perSca = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -108,10 +112,7 @@
             this.EcxhangeTabs = new System.Windows.Forms.TabPage();
             this.WalletTab = new System.Windows.Forms.TabPage();
             this.OrdersTab = new System.Windows.Forms.TabPage();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.InfoView)).BeginInit();
             this.Ecxhange.SuspendLayout();
@@ -730,6 +731,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.button8);
             this.tabPage4.Controls.Add(this.label17);
             this.tabPage4.Controls.Add(this.textBox7);
             this.tabPage4.Controls.Add(this.textBox6);
@@ -747,6 +749,36 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "FastTradng";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(405, 16);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(24, 13);
+            this.label17.TabIndex = 64;
+            this.label17.Text = "buy";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(408, 85);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 63;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(408, 59);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 62;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(408, 35);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 61;
             // 
             // label16
             // 
@@ -892,35 +924,14 @@
             this.OrdersTab.Text = "Orders";
             this.OrdersTab.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // button8
             // 
-            this.textBox5.Location = new System.Drawing.Point(408, 35);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 61;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(408, 59);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 62;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(408, 85);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 63;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(405, 16);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(24, 13);
-            this.label17.TabIndex = 64;
-            this.label17.Text = "buy";
+            this.button8.Location = new System.Drawing.Point(408, 111);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 65;
+            this.button8.Text = "Spy4period";
+            this.button8.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -1045,6 +1056,7 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button button8;
     }
 }
 

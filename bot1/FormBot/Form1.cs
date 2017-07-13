@@ -1072,11 +1072,16 @@ namespace FormBot
 
             double sum = 0.0003914;
             scaling(cp, perSca.SelectedIndex, sum,0.001m);
-
-
-
-
+            
 
             }
+
+
+
+
+
+
+
+
         }
 }
