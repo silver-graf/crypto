@@ -1076,12 +1076,30 @@ namespace FormBot
 
             }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
 
-
-
+            
+            // amount / price : amount* price
+            textBox7.Text = ( Convert.ToDouble(textBox6.Text) / Convert.ToDouble(textBox5.Text)).ToString();
 
 
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+            textBox7.Text = (Convert.ToDouble(textBox6.Text) * Convert.ToDouble(textBox5.Text)).ToString();
+
+        }
+    }
 }

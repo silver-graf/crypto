@@ -95,6 +95,10 @@
             this.button5 = new System.Windows.Forms.Button();
             this.graphsper2 = new System.Windows.Forms.ComboBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.buttonbuy = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -112,7 +116,6 @@
             this.EcxhangeTabs = new System.Windows.Forms.TabPage();
             this.WalletTab = new System.Windows.Forms.TabPage();
             this.OrdersTab = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.InfoView)).BeginInit();
             this.Ecxhange.SuspendLayout();
@@ -549,6 +552,7 @@
             this.button3.TabIndex = 37;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // label2
             // 
@@ -731,7 +735,10 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.button8);
+            this.tabPage4.Controls.Add(this.label20);
+            this.tabPage4.Controls.Add(this.label19);
+            this.tabPage4.Controls.Add(this.label18);
+            this.tabPage4.Controls.Add(this.buttonbuy);
             this.tabPage4.Controls.Add(this.label17);
             this.tabPage4.Controls.Add(this.textBox7);
             this.tabPage4.Controls.Add(this.textBox6);
@@ -750,6 +757,43 @@
             this.tabPage4.Text = "FastTradng";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(514, 88);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(62, 13);
+            this.label20.TabIndex = 68;
+            this.label20.Text = "amount_res";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(514, 62);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(71, 13);
+            this.label19.TabIndex = 67;
+            this.label19.Text = "amount_base";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(514, 38);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(30, 13);
+            this.label18.TabIndex = 66;
+            this.label18.Text = "price";
+            // 
+            // buttonbuy
+            // 
+            this.buttonbuy.Location = new System.Drawing.Point(408, 111);
+            this.buttonbuy.Name = "buttonbuy";
+            this.buttonbuy.Size = new System.Drawing.Size(75, 23);
+            this.buttonbuy.TabIndex = 65;
+            this.buttonbuy.Text = "buy";
+            this.buttonbuy.UseVisualStyleBackColor = true;
+            this.buttonbuy.Click += new System.EventHandler(this.button8_Click);
+            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -765,6 +809,7 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 63;
+            this.textBox7.Text = "0";
             // 
             // textBox6
             // 
@@ -772,6 +817,8 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 62;
+            this.textBox6.Text = "0";
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox5
             // 
@@ -779,6 +826,8 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 61;
+            this.textBox5.Text = "0";
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label16
             // 
@@ -924,15 +973,6 @@
             this.OrdersTab.Text = "Orders";
             this.OrdersTab.UseVisualStyleBackColor = true;
             // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(408, 111);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 65;
-            this.button8.Text = "Spy4period";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1056,7 +1096,10 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button buttonbuy;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
     }
 }
 
