@@ -29,8 +29,8 @@ namespace FormBot
 
         }
         private static PoloniexClient PC { get; set; }
-        private string publApi = "A8CGXC1M-8K3RT6H6-USN5FJNE-PRYMF1MF";
-        private string privApi = "5fee105e98df0ef3f4367599a389a8934ec08b0ef34262a5e358e19e1c035eab320d3e9ee392206ec1f785f2c9ad5a307849c2c5b745dcfd92a90532a5b909d5";
+        private string publApi = "GSJ2L8AG-JNIHTDPA-MBP5416I-EVRAPX4W";
+        private string privApi = "9f60ddf052fde981cc1111e2b8889938805e08ecc66d437a5c69ed73b1f28017a182b73f53d716f5b78e1bd1e8b58bf5491d6820868a0d66fb15aaff9abfdabe";
         private bool tt = false;
         private Task<IDictionary<CurrencyPair, IMarketData>> markets;
         IList<string> pairsChange;
@@ -1008,7 +1008,7 @@ namespace FormBot
 
         public async void makeordertest(CurrencyPair c, double pr)
         {
-            var makeord = await PC.Trading.PostOrderAsync(c, OrderType.Buy, pr, 0.0039);
+           // var makeord = await PC.Trading.PostOrderAsync(c, OrderType.Buy, pr, 0.0039);
         }
 
         public void scaling(CurrencyPair c , int period,double sum,decimal prof )
@@ -1079,14 +1079,37 @@ namespace FormBot
         private void button8_Click(object sender, EventArgs e)
         {
 
+            //only fiat
+
+            // zec buy - buy zec from btc,
+            // use amount from poloniex in both variant
+            // 422 - if not enought
+
+            CurrencyPair c = CurrencyPair.Parse("BTC_ZEC");//(BaseCur.Text+"_"+QuoteCur.Text);
+            ulong makeord =100;
+            try
+            {
+                makeord = PC.Trading.PostOrderAsync(c, OrderType.Buy, Convert.ToDouble(textBox5.Text), Convert.ToDouble(textBox7.Text)).Result;// , Convert.ToDouble(textBox6.Text)).Result;
+            }
+            catch (Exception ex)
+
+            {
+                MessageBox.Show(makeord.ToString() +" "+ ex.Message );
+            }
+
+
+            MessageBox.Show(makeord.ToString());
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
-            
-            // amount / price : amount* price
-            textBox7.Text = ( Convert.ToDouble(textBox6.Text) / Convert.ToDouble(textBox5.Text)).ToString();
+            // buy eth in BTC_ETH it'mean - sell btc for eth
+
+
+
+           // textBox7.Text = (Double.Parse(textBox6.Text) / Double.Parse(textBox5.Text)).ToString("0.########");
+
 
 
         }
@@ -1098,7 +1121,62 @@ namespace FormBot
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
-            textBox7.Text = (Convert.ToDouble(textBox6.Text) * Convert.ToDouble(textBox5.Text)).ToString();
+           
+            //
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+          
+
+        }
+
+        double Trun (double tr)
+        {
+
+            return Math.Truncate(tr * 100000000) / 100000000;
+
+        }
+
+        private void textBox7_Leave(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void textBox6_Leave(object sender, EventArgs e)
+        {
+            textBox6.Text=textBox6.Text.Replace(".", ",");
+            textBox5.Text=textBox5.Text.Replace(".", ",");
+            textBox7.Text = Trun(Double.Parse(textBox6.Text) / Double.Parse(textBox5.Text)).ToString();//"0.########");
+
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            //amount - zec
+            CurrencyPair c = CurrencyPair.Parse("BTC_ZEC");//(BaseCur.Text+"_"+QuoteCur.Text);
+            ulong makeord = 100;
+            try
+            {
+                makeord = PC.Trading.PostOrderAsync(c, OrderType.Sell, Convert.ToDouble(textBox8.Text), Convert.ToDouble(textBox9.Text)).Result;// , Convert.ToDouble(textBox6.Text)).Result;
+            }
+            catch (Exception ex)
+
+            {
+                MessageBox.Show(makeord.ToString() + " " + ex.Message);
+            }
+
+
+            MessageBox.Show(makeord.ToString());
+        }
+
+        private void textBox9_Leave(object sender, EventArgs e)
+        {
+            textBox9.Text = textBox9.Text.Replace(".", ",");
+            textBox8.Text = textBox8.Text.Replace(".", ",");
+            textBox10.Text = Trun(Double.Parse(textBox8.Text) * Double.Parse(textBox9.Text)).ToString();//"0.########");
 
         }
     }

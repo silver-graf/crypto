@@ -31,7 +31,7 @@ namespace Jojatekok.PoloniexAPI
         private static BigInteger CurrentHttpPostNonce { get; set; }
 
         internal static string GetResponseString(this HttpWebRequest request)
-        {
+        {//422 - not have enought crypto???
             using (var response = request.GetResponse()) {
                 using (var stream = response.GetResponseStream()) {
                     if (stream == null) throw new NullReferenceException("The HttpWebRequest's response stream cannot be empty.");

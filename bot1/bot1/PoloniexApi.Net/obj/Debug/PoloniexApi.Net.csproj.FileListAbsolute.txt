@@ -66,3 +66,17 @@ D:\repo\crypto\bot1\bot1\PoloniexApi.Net\bin\Debug\WampSharp.Default.xml
 D:\repo\crypto\bot1\bot1\PoloniexApi.Net\obj\Debug\PoloniexApi.Net.csprojResolveAssemblyReference.cache
 D:\repo\crypto\bot1\bot1\PoloniexApi.Net\obj\Debug\PoloniexApi.Net.dll
 D:\repo\crypto\bot1\bot1\PoloniexApi.Net\obj\Debug\PoloniexApi.Net.pdb
+C:\crypto\bot1\bot1\PoloniexApi.Net\bin\Debug\PoloniexApi.Net.dll
+C:\crypto\bot1\bot1\PoloniexApi.Net\bin\Debug\PoloniexApi.Net.pdb
+C:\crypto\bot1\bot1\PoloniexApi.Net\bin\Debug\Castle.Core.xml
+C:\crypto\bot1\bot1\PoloniexApi.Net\bin\Debug\MsgPack.xml
+C:\crypto\bot1\bot1\PoloniexApi.Net\bin\Debug\Newtonsoft.Json.xml
+C:\crypto\bot1\bot1\PoloniexApi.Net\bin\Debug\System.Reactive.Core.xml
+C:\crypto\bot1\bot1\PoloniexApi.Net\bin\Debug\System.Reactive.Interfaces.xml
+C:\crypto\bot1\bot1\PoloniexApi.Net\bin\Debug\System.Reactive.Linq.xml
+C:\crypto\bot1\bot1\PoloniexApi.Net\bin\Debug\System.Reactive.PlatformServices.xml
+C:\crypto\bot1\bot1\PoloniexApi.Net\bin\Debug\WampSharp.xml
+C:\crypto\bot1\bot1\PoloniexApi.Net\bin\Debug\WampSharp.Default.xml
+C:\crypto\bot1\bot1\PoloniexApi.Net\obj\Debug\PoloniexApi.Net.csprojResolveAssemblyReference.cache
+C:\crypto\bot1\bot1\PoloniexApi.Net\obj\Debug\PoloniexApi.Net.dll
+C:\crypto\bot1\bot1\PoloniexApi.Net\obj\Debug\PoloniexApi.Net.pdb
